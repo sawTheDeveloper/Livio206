@@ -1,0 +1,21 @@
+header{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body{
+    display: grid;
+   
+}
+
+h1{
+     color: gold;
+     text-align: center;
+}
+
+.CoverContainer{
+    flex: min-content;
+
+}
