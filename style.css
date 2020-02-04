@@ -1,21 +1,37 @@
-header{
-    background-image: url(img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 
+*{
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    display: grid;
-   
+.wrapper{
+    width: 100%;
 }
 
-h1{
-     color: gold;
-     text-align: center;
+.banner{
+ display: none;
 }
 
-.CoverContainer{
-    flex: min-content;
+.pic1{
+ width: 100%;
+}
 
+.bio{
+    width: 100%;
+}
+
+.bio h1{
+    padding: 30px 30px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: #111;
+    line-height:  44px;
+}
+
+.bio p{
+    padding: 0px 30px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    color: #111;
+    line-height:  24px;
 }
