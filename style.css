@@ -5,7 +5,10 @@
 }
 
 .wrapper{
+    display: grid;
     width: 100%;
+    flex-shrink: 1;
+    flex-grow: 2;
 }
 
 .banner{
@@ -34,4 +37,9 @@
     font-size: 16px;
     color: #111;
     line-height:  24px;
+}
+
+.AlbumContainer{
+    display: flex;
+    flex-direction: column-reverse;
 }
