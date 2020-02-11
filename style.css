@@ -109,3 +109,30 @@ footer h3{
 .btn:hover {
     background: #f4f4f4;
 }
+
+/* Screen Sizes 500px and Up */
+
+@media(min-width: 500px){
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #wrapper-text {
+        height: 100vh;
+    }
+
+    #wrapper-image{
+        height: 100vh;
+    }
+
+}
+
+/* Screen sizes 700px and up */
+@media(min-width: 700px){
+    .btn{
+        padding: 1rem 3rem;
+    }
+
+}
