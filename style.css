@@ -32,7 +32,7 @@ main{
 }
 
 #wrapper{
-    background: #fff;
+    background: rgb(0, 0, 0);
 
 
 }
@@ -53,8 +53,6 @@ main{
 }
 
 #wrapper-image{
-
-    background: url(img/SocialCurrencycover.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -66,7 +64,7 @@ main{
 #header{
    padding: 1.5rem;
    text-align: center;
-   background: #333;
+   background: rgb(0, 0, 0);
    color: #fff;
 }
 
@@ -78,16 +76,25 @@ main{
   padding-left: 1rem;
 }
 
+.MixtapeContainer{
+    
+}
+
+.MixtapeContainer img{
+    margin-bottom: 5.0rem;
+}
+
 .caption{
     padding: 0.8rem;
     text-align: center;
 }
 
 footer{
+    background-color:rgb(0, 0, 0);
     text-align: center;
     padding:  2rem 1rem;
     margin: auto;
-    color: #333;
+    color: #888;
 }
 
 footer h3{
