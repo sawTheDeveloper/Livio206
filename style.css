@@ -1,10 +1,10 @@
 body{
     margin: 0;
-    background:#eee;
+    background:rgb(255, 255, 255);
     height: auto;
 }
 
-h1{ color: #888;
+h1{ color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -12,6 +12,7 @@ h1{ color: #888;
 }
 
 h2{
+    color: white;
     font-weight: 400;
     font-size: 1.2rem;
     text-transform: capitalize;
@@ -20,7 +21,9 @@ h2{
 
 
 img{
-    display: block;
+    margin-top: 50%;
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 
@@ -40,7 +43,6 @@ main{
 #wrapper-text{
     display: flex;
     flex: 0 1 40vw;
-    height: 50vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -49,7 +51,7 @@ main{
 }
 
 #wrapper-text h2 {
-    color: #888;
+    color: rgb(255, 255, 255);
 }
 
 #wrapper-image{
