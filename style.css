@@ -3,10 +3,9 @@ main{
     background-image: url(img/pic.jpg);
     background-repeat: repeat-x;
     max-width: auto;
-    margin: auto;
-    box-shadow: 30px 0px 40px rgba(0,0,0,0.1),
-    -30px 0px 40px rgba(0,0,0,0.1);
+    
 }
+
 
 .Logo{
     display: flex;
@@ -14,11 +13,14 @@ main{
 }
 
 .MixtapeContainer{
+    justify-content: center;
     align-items: center;
     
 }
 
 .MixtapeContainer img{
+    flex-direction: column;
+    justify-content: space-evenly;
     margin-bottom: 5.0rem;
 }
 
