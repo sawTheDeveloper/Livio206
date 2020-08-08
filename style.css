@@ -2,14 +2,16 @@
 main{
     background-image: url(img/pic.jpg);
     background-repeat: repeat-x;
-    max-width: 600px;
+    max-width: auto;
     margin: auto;
     box-shadow: 30px 0px 40px rgba(0,0,0,0.1),
     -30px 0px 40px rgba(0,0,0,0.1);
 }
 
-
-
+.Logo{
+    display: flex;
+    justify-content: center;
+}
 
 .MixtapeContainer{
     align-items: center;
@@ -20,11 +22,15 @@ main{
     margin-bottom: 5.0rem;
 }
 
-.caption{
-    padding: 0.8rem;
-    text-align: center;
+footer{
+    justify-content: center;
+    align-items: center;
 }
 
+footer a{
+    justify-content: center;
+    margin-left: 2rem;
+}
 
 .btn{
     padding: 0.5rem 2rem;
