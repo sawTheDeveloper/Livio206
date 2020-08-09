@@ -3,7 +3,6 @@ main{
     background-image: url(img/pic.jpg);
     background-repeat: repeat-x;
     max-width: auto;
-    
 }
 
 
@@ -12,16 +11,10 @@ main{
     justify-content: center;
 }
 
-.MixtapeContainer{
-    justify-content: center;
+.container-lg{
+    justify-content: space-between;
     align-items: center;
     
-}
-
-.MixtapeContainer img{
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 5.0rem;
 }
 
 footer{
@@ -50,4 +43,6 @@ footer a{
 }
 
 /* Screen Sizes 500px and Up */
+
+
 
