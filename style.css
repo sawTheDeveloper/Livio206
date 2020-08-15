@@ -1,10 +1,4 @@
 
-main{
-    background-image: url(img/pic.jpg);
-    background-repeat: repeat-x;
-    max-width: auto;
-}
-
 
 .Logo{
     display: flex;
