@@ -1,20 +1,28 @@
-#checkout-button-price_1HLJsNLNv8aAdHoyVH9PLbSR{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
 
 .Logo{
     display: flex;
     justify-content: center;
 }
 
-.container-lg{
+.MixtapeContainer{
+    display: flex;
+    justify-content: center;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column-reverse;
-    
+    flex-direction: column;
 }
+
+navbar{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 footer{
     justify-content: center;
