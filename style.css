@@ -5,6 +5,8 @@
 }
 
 .MixtapeContainer{
+    background-image: url(img/pic.jpg);
+    background-repeat: space;
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -22,15 +24,25 @@ h2,h1{
     justify-content: center;
 }
 
+video
+{
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
 
 
 footer{
+    justify-content: space-between;
     padding-top: 4rem;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 4rem;
+    
+  
 }
 
 footer a{
+    
+    flex-direction: column;
     justify-content: center;
     margin-left: 2rem;
 }

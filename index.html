@@ -21,28 +21,65 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-       
+        <script src="https://js.stripe.com/v3/"></script>
        
     </head>
 
     <body>
       
        
-             <div class= "col col-lg-2">
-          <div class="Logo">
-         <img src="img/livio3.svg">
-         </div>
-         <navbar>
+        <header>
+            <div class="Logo">
+                <img src="img/livio3.svg">
+                </div>
+                <navbar>
             <a href="index.html" class="btn" id="view-work"> Home</a>
             <a href="Videos.html" class="btn" id="view-work"> Videos</a>
             <a href="Albums.html" class="btn" id="view-work"> Albums</a>
             <a href="Mixtapes.html" class="btn" id="view-work"> Mixtapes</a>
             </navbar>
-        <h1>Livio</h1>
-        <h2>Though the rap game was overpopulated with run-of-the-mill artists in the early 2000s -- conveniently divided into one of three coasts and their respective styles -- Livio impressed many in the underground scene with his unique twist on the standard West Coast style. Coming from the unlikely home base of Seattle, Livio aligned himself with the vibrant Cali scene, in particular working with experienced West Coast producer Funk Daddy (E-40, B-Legit, Sir Mix-a-Lot, C-Bo). The respected producer laid down all the beats on Livio's debut release for Pak Pros, My Life, Vol. 1. Moreover, despite being on an indie label and being from Seattle, Livio attracted an impressive roster of guests for his album, including D-12, Tray Deee, Noreaga, and Spice 1 among others. </h2>
+              </header>
+        <h1>Liv Forever Available Now!</h1>
         
+         <div class="MixtapeContainer">
         
-       
+            <div class="pic01">
+                <img src="img/Liv Forever.png"></div>
+                <button
+                style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                id="checkout-button-price_1HLJphLNv8aAdHoyKH3BpfKh"
+                role="link"
+                type="button"
+                >
+                Checkout
+                </button>
+                
+                <div id="error-message"></div>
+                
+                <script>
+                (function() {
+                var stripe = Stripe('pk_test_51EckxULNv8aAdHoyuu8MIPoXBD25Bv5I2tnDjWZ7FWUKhRerg3QPR8cEmmFbZxXsmK65NFC5BruOuHWjHyvgLQWU00FDQsARjO');
+                
+                var checkoutButton = document.getElementById('checkout-button-price_1HLJphLNv8aAdHoyKH3BpfKh');
+                checkoutButton.addEventListener('click', function () {
+                 
+                  stripe.redirectToCheckout({
+                    lineItems: [{price: 'price_1HLJphLNv8aAdHoyKH3BpfKh', quantity: 1}],
+                    mode: 'payment',
+                   
+                    successUrl: 'https://u.pcloud.link/publink/show?code=kZb8FVXZSpFaNhF5WnJTnpoKOtI2b063idS7',
+                    cancelUrl: 'https://merchants.2go.com/AccountDetails/DetailsForAccount?accountId=23485961&range=2/canceled',
+                  })
+                  .then(function (result) {
+                    if (result.error) {
+                     
+                      var displayError = document.getElementById('error-message');
+                      displayError.textContent = result.error.message;
+                    }
+                  });
+                });
+                })();
+                </script>
       
     
           
