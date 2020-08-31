@@ -22,7 +22,7 @@ Video list and links
         First Verse
         <iframe width="560" height="315" src="https://www.youtube.com/watch?v=q8vH47M2qE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         Young Rich Africans
-        <iframe width="560" height="315" src="https://www..youtube.com/watch?v=iZDX6nEplDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=iZDX6nEplDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         Can you put me on
         <iframe width="560" height="315" src="https://www.youtube.com/watch?v=bgwdZekbuUA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         Paranoid
