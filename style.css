@@ -16,7 +16,7 @@ header{
 }
 
 .MixtapeContainer{
-    padding-top: 12rem;
+    padding-top: 11.3rem;
     background-image: url(img/pic.jpg);
     background-repeat: space;
     display: flex;
@@ -75,6 +75,28 @@ footer a{
 }
 
 /* Screen Sizes 500px and Up */
+@media only screen and (min-width: 64.063em) { 
+    .MixtapeContainer{
+        padding-top: 24rem;
+        background-image: url(img/pic.jpg);
+        background-repeat: space;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    video{
+    max-width: 50%;
+    height: auto;
+    max-height: 50%;
+}
+
+
+
+}
+
 
 
 
