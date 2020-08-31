@@ -1,4 +1,10 @@
 
+body{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
 .Logo{
     display: flex;
     justify-content: center;
@@ -16,7 +22,7 @@ header{
 }
 
 .MixtapeContainer{
-    padding-top: 11.3rem;
+    padding-top: 12rem;
     background-image: url(img/pic.jpg);
     background-repeat: space;
     display: flex;
@@ -46,8 +52,10 @@ video
 
 footer{
     justify-content: space-between;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: auto;
+    font-size: 21px;
+    
     
   
 }
@@ -77,7 +85,6 @@ footer a{
 /* Screen Sizes 500px and Up */
 @media only screen and (min-width: 64.063em) { 
     .MixtapeContainer{
-        padding-top: 24rem;
         background-image: url(img/pic.jpg);
         background-repeat: space;
         display: flex;
@@ -92,6 +99,10 @@ footer a{
     height: auto;
     max-height: 50%;
 }
+
+    header{
+        position: relative;
+    }
 
 
 
