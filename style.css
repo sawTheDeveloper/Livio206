@@ -25,12 +25,11 @@ header{
 .MixtapeContainer{
     padding-top: 12rem;
     padding-bottom: 50%;
-    background-image: url(img/pic.jpg);
-    background-repeat: space;
+    background-image: url(img/BWpic.jpg);
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 navbar{
