@@ -5,17 +5,16 @@ main{
     background-attachment: fixed;
 }
 
+
 .Logo{
-	max-width: 40%;
-    display: block;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 50%;
+	margin: auto;
 }
 
 header{
     overflow: hidden;
-    background-color: white;
-    position: fixed;
+    background-image: url(img/headerbg.jpg);
+    position: sticky;
     top: 0;
     width: 100%;
     z-index:1;
@@ -36,9 +35,10 @@ header{
 }
 
 navbar{
+    background-color: antiquewhite;
     display: flex;
     justify-content: center;
-    z-index:1;
+    
 }
 
 h2,h1{
@@ -51,7 +51,7 @@ footer{
     align-items: center;
     justify-content: center space-evenly;
     padding: 3%;
-    background-color: rgb(255, 255, 255);
+    background-color: antiquewhite;
     font-size: 20px; 
     margin-left: auto;
 	margin-right: auto;    
@@ -65,7 +65,7 @@ footer{
 }
 
 
-.btn{
+.hbtn{
     padding: 0.5rem 2rem;
     border: 1px #ccc solid;
     display: inline-block;
@@ -76,25 +76,19 @@ footer{
     transition: background 500ms ease;
 }
 
-.btn:hover {
+.hbtn:hover {
     background: #f4f4f4;
 }
 
 /* Screen Sizes 500px and Up */
 @media only screen and (min-width: 64.063em) { 
-    .MixtapeContainer{
-        background-image: url(img/pic.jpg);
-        background-repeat: space;
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-    }
-
 
     header{
         position: relative;
+    }
+
+    .Logo{
+        max-width: 30%;
     }
 
 
