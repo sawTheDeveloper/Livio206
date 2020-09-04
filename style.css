@@ -18,7 +18,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-
+    z-index:1;
   
     
 }
@@ -38,18 +38,12 @@ header{
 navbar{
     display: flex;
     justify-content: center;
+    z-index:1;
 }
 
 h2,h1{
     display: flex;
     justify-content: center;
-}
-
-video
-{
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
 }
 
 
