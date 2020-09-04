@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
 
 </head>
 <body>
@@ -42,129 +43,150 @@
         </navbar>
     </header>
     
-    <h2>Videos</h2>
-    <div class="MixtapeContainer">
-        <script>
-            //Start Youtube API
-            var tag = document.createElement('script');
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName('script')[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    <h2 style="color:#FFF;padding:2%;text-shadow: 2px 2px 4px #000000">Videos</h2>
+    <script>
+        //Start Youtube API
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-            var youtubeReady = false;
+var youtubeReady = false;
 
-            //Variable for the dynamically created youtube players
-            var players = new Array();
-            var isPlaying = false;
-
-            function onYouTubeIframeAPIReady() {
-                //The id of the iframe and is the same as the videoId	
-                jQuery(".youtube-video").each(function(i, obj) {
-                    players[obj.id] = new YT.Player(obj.id, {
-                        videoId: obj.id,
-                        playerVars: {
-                            controls: 2,
-                            rel: 0,
-                            autohide: 1,
-                            showinfo: 0,
-                            modestbranding: 1,
-                            wmode: "transparent",
-                            html5: 1
-                        },
-                        events: {
-                            'onStateChange': onPlayerStateChange
-                        }
-                    });
-                });
-                youtubeReady = true;
-            }
+//Variable for the dynamically created youtube players
+var players= new Array();
+var isPlaying = false;
+function onYouTubeIframeAPIReady(){
+  //The id of the iframe and is the same as the videoId	
+  jQuery(".youtube-video").each(function(i, obj)  {
+     players[obj.id] = new YT.Player(obj.id, {         
+			  videoId: obj.id,
+			    playerVars: {
+			    controls: 2,
+		      rel:0,
+		      autohide:1,
+		      showinfo: 0 ,
+		      modestbranding: 1,
+		      wmode: "transparent",
+		      html5: 1
+       	},    
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+       });
+     });
+     youtubeReady = true;
+  }
 
 
-            function onPlayerStateChange(event) {
-                var target_control = jQuery(event.target.getIframe()).parent().parent().parent().find(".controls");
+function onPlayerStateChange(event) {
+  var target_control =  jQuery(event.target.getIframe()).parent().parent().parent().find(".controls");
+  
+  var target_caption = jQuery(event.target.getIframe()).parent().find(".carousel-caption");
+  switch(event.data){
+    case -1:
+      jQuery(target_control).fadeIn(500);
+      jQuery(target_control).children().unbind('click');
+      break
+     case 0:
+      jQuery(target_control).fadeIn(500);
+      jQuery(target_control).children().unbind('click');
+      break;
+     case 1:
+      jQuery(target_control).children().click(function () {return false;});
+      jQuery(target_caption).fadeOut(500);
+      jQuery(target_control).fadeOut(500);
+       break;
+      case 2:
+        jQuery(target_control).fadeIn(500);
+        jQuery(target_control).children().unbind('click'); 
+        break;
+        case 3:
+           jQuery(target_control).children().click(function () {return false;});
+           jQuery(target_caption).fadeOut(500);
+           jQuery(target_control).fadeOut(500);
+           break;
+          case 5:
+            jQuery(target_control).children().click(function () {return false;});
+            jQuery(target_caption).fadeOut(500);
+            jQuery(target_control).fadeOut(500);
+            break;
+          default:
+            break;
+    }
+};
 
-                var target_caption = jQuery(event.target.getIframe()).parent().find(".carousel-caption");
-                switch (event.data) {
-                    case -1:
-                        jQuery(target_control).fadeIn(500);
-                        jQuery(target_control).children().unbind('click');
-                        break
-                    case 0:
-                        jQuery(target_control).fadeIn(500);
-                        jQuery(target_control).children().unbind('click');
-                        break;
-                    case 1:
-                        jQuery(target_control).children().click(function() {
-                            return false;
-                        });
-                        jQuery(target_caption).fadeOut(500);
-                        jQuery(target_control).fadeOut(500);
-                        break;
-                    case 2:
-                        jQuery(target_control).fadeIn(500);
-                        jQuery(target_control).children().unbind('click');
-                        break;
-                    case 3:
-                        jQuery(target_control).children().click(function() {
-                            return false;
-                        });
-                        jQuery(target_caption).fadeOut(500);
-                        jQuery(target_control).fadeOut(500);
-                        break;
-                    case 5:
-                        jQuery(target_control).children().click(function() {
-                            return false;
-                        });
-                        jQuery(target_caption).fadeOut(500);
-                        jQuery(target_control).fadeOut(500);
-                        break;
-                    default:
-                        break;
-                }
-            };
+jQuery(window).bind('load', function(){
+  jQuery(".carousel-caption").fadeIn(500);
+  jQuery(".controls").fadeIn(500);
+ });
 
-            jQuery(window).bind('load', function() {
-                jQuery(".carousel-caption").fadeIn(500);
-                jQuery(".controls").fadeIn(500);
-            });
-
-            jQuery('.carousel').bind('slid.bs.carousel', function(event) {
-                jQuery(".controls").fadeIn(500);
-            });
-        </script>
+jQuery('.carousel').bind('slid.bs.carousel', function (event) {
+   jQuery(".controls").fadeIn(500);
+});
+    </script>
+    <div style="padding-top: 5%; padding-bottom: 5%;" class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <div id="random_number1" class="carousel slide youtube-carousel" data-ride="carousel" data-interval="false">
-                    <div class="carousel-inner">
-                        <div class="video-container item active">
-                            <div class="youtube-video" id='KcPgQpZFIiA'></div>
-                            <div class="carousel-caption">Gold Drip</div>
-                        </div>
-                        <div class="video-container item">
-                            <div class="youtube-video" id='Sv0kDhLFW-A'></div>
-                            <div class="carousel-caption">Neutral Gang</div>
-                        </div>
-                        <div class="video-container item ">
-                            <div class="youtube-video" id='MpuzQhCppfM'></div>
-                            <div class="carousel-caption">First Verse</div>
-                        </div>
-                    </div>
-                    <div class="controls">
-                        <a class="left carousel-control" href="#random_number1" data-slide="prev">
-                            <div class="left-button">
-                                <div class="glyphicon glyphicon-chevron-left"></div>
-                            </div>
-                        </a>
-                        <a class="right carousel-control" href="#random_number1" data-slide="next">
-                            <div class="right-button">
-                                <div class="glyphicon glyphicon-chevron-right"></div>
-                            </div>
-                        </a>
-                    </div>
+          <div class="col-sm-8 col-sm-offset-2">
+            <div id="random_number1" class="carousel slide youtube-carousel"  data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="video-container item active">
+                    <div class="youtube-video" id='KcPgQpZFIiA'></div>
+                    <div class="carousel-caption">Gold Drip</div>
                 </div>
+                <div class="video-container item">
+                    <div class="youtube-video" id='Sv0kDhLFW-A'></div>
+                    <div class="carousel-caption">Neutral Gang</div>
+                </div>
+                <div class="video-container item">
+                    <div class="youtube-video" id='q8vH47M2qE8'></div>
+                    <div class="carousel-caption">First Verse</div>
+                </div>    
+                    <div class="video-container item">
+                        <div class="youtube-video" id='iZDX6nEplDI'></div>
+                        <div class="carousel-caption">Young East Africans</div>
+                    </div>
+                        <div class="video-container item">
+                        <div class="youtube-video" id='bgwdZekbuUA'></div>
+                        <div class="carousel-caption">Can you put me on</div>
+                    </div>            
+                         <div class="video-container item">
+                         <div class="youtube-video" id='ISxm0l30Izw'></div>
+                         <div class="carousel-caption">Paranoid</div>
+                    </div>
+                         <div class="video-container item">
+                         <div class="youtube-video" id='DWB8Gi0l5cg'></div>
+                         <div class="carousel-caption">Thats the way I feel</div>
+                    </div>        
+                        <div class="video-container item">
+                        <div class="youtube-video" id='GrU0jWFMfkM'></div>
+                        <div class="carousel-caption">I Wonder</div>
+                    </div>
+                        <div class="video-container item">
+                        <div class="youtube-video" id='Zc7IFoay-n0'></div>
+                        <div class="carousel-caption">Gangster</div>
+                    </div>
+                        <div class="video-container item">
+                        <div class="youtube-video" id='MpuzQhCppfM'></div>
+                        <div class="carousel-caption">Paper Mache</div>
+                </div>
+              </div>
+              <div class="controls">
+                <a class="left carousel-control" href="#random_number1" data-slide="prev">
+                  <div class="left-button">
+                    <div class="glyphicon glyphicon-chevron-left"></div>
+                  </div>
+                </a>
+                <a class="right carousel-control" href="#random_number1" data-slide="next">        
+                  <div class="right-button">
+                    <div class="glyphicon glyphicon-chevron-right"></div>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
 </main>
     <footer>
@@ -179,8 +201,7 @@
          <a href="https://partner.pcloud.com/r/34380" title="pCloud Premium" target="_blank"><img class= "footerlogo" src="img/pcloudsml.png" alt="pCloud Premium"/>
       </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>
