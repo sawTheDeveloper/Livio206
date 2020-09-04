@@ -1,8 +1,0 @@
-- ALBUM LAUNCH HIGHLIGHT
-- Make "All the Time" play on index.html load
-- Bottom border fix
-- Background/Banner General Graphics Fix
-- Coming Soon on Mixtapes
-- Highlight Album Release and direct to purchase page
-- pCloud advert fix
-- pull carousel out of Mixtape Container and get CSS for carousel from podcast code
