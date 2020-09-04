@@ -1,6 +1,8 @@
 
-body a{
-    
+main{
+    background: url(img/leatherbg_optimized.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .Logo{
@@ -52,23 +54,23 @@ video
 
 
 footer{
-    height:auto;
-    justify-content:flex-end;
-    align-items: flex-end;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    font-size: 21px;
-    
-    
-  
-}
-
-footer a{
-    
     flex-direction: column;
     justify-content: center;
-    margin-left: 2rem;
+    padding: 3%;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px; 
+    margin: auto    
 }
+
+.footerlogo{
+    grid-auto-flow: column;
+    justify-content: center;
+    max-width: 5%;
+    margin-left: 12%;
+    padding-bottom: 5%;
+}
+
+
 
 .btn{
     padding: 0.5rem 2rem;
@@ -97,11 +99,6 @@ footer a{
         flex-direction: column;
     }
 
-    video{
-    max-width: 50%;
-    height: auto;
-    max-height: 50%;
-}
 
     header{
         position: relative;
@@ -111,6 +108,7 @@ footer a{
 
 }
 
+/*Carousel Magic*/
 
 
 
