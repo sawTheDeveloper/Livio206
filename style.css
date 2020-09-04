@@ -24,12 +24,11 @@ header{
 
 .MixtapeContainer{
     padding-top: 12rem;
-    padding-bottom: 100%;
+    padding-bottom: 50%;
     background-image: url(img/pic.jpg);
     background-repeat: space;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
@@ -65,18 +64,17 @@ footer{
 }
 
 
-.hbtn{
+.btn{
     padding: 0.5rem 2rem;
     border: 1px #ccc solid;
     display: inline-block;
-    margin: 2rem 0 0;
     border-radius: 50px;
     text-decoration: none;
     color: #333;
     transition: background 500ms ease;
 }
 
-.hbtn:hover {
+.btn:hover {
     background: #f4f4f4;
 }
 
