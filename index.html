@@ -54,7 +54,7 @@
                 <img style="padding:3%; max-width: 100%; margin: auto;" src="img/Liv Forever.png"></div>
                 <button
                 style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;text-shadow: 2px 2px 4px #000000"
-                id="checkout-button-price_1HLJphLNv8aAdHoyKH3BpfKh"
+                id="checkout-button-price_1HLHUDLNv8aAdHoyBsNPypPd"
                 role="link"
                 type="button"
                 >
@@ -65,17 +65,17 @@
                 
                 <script>
                 (function() {
-                var stripe = Stripe('pk_test_51EckxULNv8aAdHoyuu8MIPoXBD25Bv5I2tnDjWZ7FWUKhRerg3QPR8cEmmFbZxXsmK65NFC5BruOuHWjHyvgLQWU00FDQsARjO');
+                var stripe = Stripe('pk_live_51EckxULNv8aAdHoyaxw4ynRKIjraWsUewCT68aQrLhl6kD1SRkVB4FEeIZkfuckrJhgh9c6s2pqjV5ryRbK9QW4p00nCRIFHUb');
                 
-                var checkoutButton = document.getElementById('checkout-button-price_1HLJphLNv8aAdHoyKH3BpfKh');
+                var checkoutButton = document.getElementById('checkout-button-price_1HLHUDLNv8aAdHoyBsNPypPd');
                 checkoutButton.addEventListener('click', function () {
                  
                   stripe.redirectToCheckout({
-                    lineItems: [{price: 'price_1HLJphLNv8aAdHoyKH3BpfKh', quantity: 1}],
+                    lineItems: [{price: 'price_1HLHUDLNv8aAdHoyBsNPypPd', quantity: 1}],
                     mode: 'payment',
                    
                     successUrl: 'https://u.pcloud.link/publink/show?code=kZb8FVXZSpFaNhF5WnJTnpoKOtI2b063idS7',
-                    cancelUrl: 'https://merchants.2go.com/AccountDetails/DetailsForAccount?accountId=23485961&range=2/canceled',
+                    cancelUrl: 'http://livio206.com/index.html',
                   })
                   .then(function (result) {
                     if (result.error) {

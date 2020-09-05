@@ -26,7 +26,8 @@ header{
     padding-top: 12rem;
     padding-bottom: 50%;
     background-image: url(img/BWpic.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,6 +90,18 @@ footer{
 
     .Logo{
         max-width: 30%;
+    }
+
+    .MixtapeContainer{
+    padding-top: 12rem;
+    padding-bottom: 50%;
+    background-image: url(img/BWpic.jpg);
+    background-repeat: repeat;
+    background-size: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
 
 
