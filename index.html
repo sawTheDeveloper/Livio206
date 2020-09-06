@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta property="og:image" content="http://www.livio206.com/img/ogimg.jpg"/>
+        <meta property="og:image:type" content="image/jpeg"/>
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="157" />
+        <link rel="icon" type="image/svg+xml" href="img/livio3.svg"/>
         <title>Livio206</title>
         <meta property="og:site_name" content="Livio206"/>
         <meta property="og:title" content="Livio206"/>
         <meta property="og:description" content="Seattle Hip Hop"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:image" content=>
         <meta property="og:locale" content="en_US"/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:title" content="Livio206"/>
@@ -29,13 +33,16 @@
     </head>
 
     <body>
-    <main>  
+    <main>
+  
       <script>
         window.onload = function() {
         document.getElementById("featured_audio").play();
 }
+        var audio = document.getElementById("featured_audio");
+        audio.volume = 0.5;
       </script>
-      <audio id="featured_audio" src="Livio Music/Albums/Livio- Liv Forever/03 All The Time.mp3" loop="loop" type="audio/mpeg"></audio>
+      
       <header>
         <div class="Logo">
           <img src="img/livio3.svg">
@@ -49,7 +56,7 @@
       </header>
       
          <div class="MixtapeContainer">
-            <h2 style="color:#FFF;text-shadow: 2px 2px 4px #000000">LIV FOREVER OUT NOW!</h2>
+            <h2 style="color:#FFF;text-shadow: 2px 2px 4px #000000">LIV FOREVER BUY NOW!</h2>
             <div class="pic01">
                 <img style="padding:3%; max-width: 100%; margin: auto;" src="img/Liv Forever.png"></div>
                 <button
@@ -60,7 +67,9 @@
                 >
                 Checkout
                 </button>
-                
+                <div style="padding:3%">
+                <audio controls controlsList="nodownload" id="featured_audio" src="Livio Music/Albums/Livio- Liv Forever/03 All The Time.mp3" loop="loop" type="audio/mpeg"></audio>
+                </div>
                 <div id="error-message"></div>
                 
                 <script>
