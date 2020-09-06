@@ -51,12 +51,12 @@ footer{
     position: relative;
     bottom: 0;
     align-items: center;
-    justify-content: center space-evenly;
+    justify-content: center;
     padding: 3%;
     background-color: antiquewhite;
     font-size: 20px; 
     margin-left: auto;
-	  margin-right: auto;    
+	margin-right: auto;    
 }
 
 .footerlogo{
@@ -80,6 +80,7 @@ footer{
 .btn:hover {
     background: #f4f4f4;
 }
+
 
 /* Screen Sizes 500px and Up */
 @media only screen and (min-width: 64.063em) { 
