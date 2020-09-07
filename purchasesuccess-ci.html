@@ -34,14 +34,7 @@
 
     <body>
     <main>
-  
-      <script>
-        window.onload = function() {
-        document.getElementById("featured_audio").play();
-}
-        var audio = document.getElementById("featured_audio");
-        audio.volume = 0.5;
-      </script>
+
       
       <header>
         <div class="Logo">
@@ -56,46 +49,22 @@
       </header>
       
          <div class="MixtapeContainer">
-            <h2 style="color:#FFF;text-shadow: 2px 2px 4px #000000">LIV FOREVER BUY NOW!</h2>
+            <h2 style="color:#FFF;text-shadow: 2px 2px 4px #000000">THANKS FOR YOUR SUPPORT!</h2>
+            <h2 style="color:#FFF;text-shadow: 2px 2px 4px #000000">YOUR DOWNLOAD IS READY BELOW!</h2>
             <div class="pic01">
-                <img style="padding:3%; max-width: 100%; margin: auto;" src="img/Liv Forever.png"></div>
-                <button
+                <img style="padding:3%; max-width: 100%; margin: auto;" src="img/CruelIntentionsCover.jpg"></div>
+                
+                <a href="/Downloads/Albums/Livio - Cruel Intentions.zip"><button
                 style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;text-shadow: 2px 2px 4px #000000"
                 id="checkout-button-price_1HLHUDLNv8aAdHoyBsNPypPd"
                 role="link"
                 type="button"
                 >
-                Checkout
-                </button>
+                DOWNLOAD ZIP
+                </button></a>
                 <div style="padding:3%">
-                <audio controls controlsList="nodownload" id="featured_audio" src="Livio Music/Albums/Livio- Liv Forever/03 All The Time.mp3" loop="loop" type="audio/mpeg"></audio>
                 </div>
-                <div id="error-message"></div>
                 
-                <script>
-                (function() {
-                var stripe = Stripe('pk_live_51EckxULNv8aAdHoyaxw4ynRKIjraWsUewCT68aQrLhl6kD1SRkVB4FEeIZkfuckrJhgh9c6s2pqjV5ryRbK9QW4p00nCRIFHUb');
-                
-                var checkoutButton = document.getElementById('checkout-button-price_1HLHUDLNv8aAdHoyBsNPypPd');
-                checkoutButton.addEventListener('click', function () {
-                 
-                  stripe.redirectToCheckout({
-                    lineItems: [{price: 'price_1HLHUDLNv8aAdHoyBsNPypPd', quantity: 1}],
-                    mode: 'payment',
-                   
-                    successUrl: 'http://livio206.com/purchasesuccess-lf.html',
-                    cancelUrl: 'http://livio206.com/index.html',
-                  })
-                  .then(function (result) {
-                    if (result.error) {
-                     
-                      var displayError = document.getElementById('error-message');
-                      displayError.textContent = result.error.message;
-                    }
-                  });
-                });
-                })();
-                </script>
       </div>
       </main>
       
