@@ -23,7 +23,7 @@ header{
 }
 
 .MixtapeContainer{
-    padding-top: 12rem;
+    padding-top: 10rem;
     padding-bottom: 50%;
     background-image: url(img/BWpic.jpg);
     background-repeat: repeat;
@@ -32,6 +32,10 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.mixpic{
+  padding: 2%;
 }
 
 navbar{
@@ -48,6 +52,7 @@ h2,h1{
 
 
 footer{
+    display: flex;
     position: relative;
     bottom: 0;
     align-items: center;
@@ -60,7 +65,7 @@ footer{
 }
 
 .footerlogo{
-    grid-auto-flow: column;
+    flex-grow: 1;
     max-width: 5%;
     margin-left: 12%;
     padding-bottom: 5%;
@@ -91,6 +96,10 @@ footer{
 
     .Logo{
         max-width: 30%;
+    }
+
+    .footerlogo{
+      margin-left: 15%;
     }
 
     .MixtapeContainer{

@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Livio206</title>
         <meta property="og:image" content="http://www.livio206.com/img/ogimg.jpg"/>
         <meta property="og:image:type" content="image/jpeg"/>
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="157" />
         <link rel="icon" type="image/svg+xml" href="img/livio3.svg"/>
-        <meta property="og:site_name" content="Livio 206"/>
-        <meta property="og:title" content="Livio 206"/>
+        <title>Livio206</title>
+        <meta property="og:site_name" content="Livio206"/>
+        <meta property="og:title" content="Livio206"/>
         <meta property="og:description" content="Seattle Hip Hop"/>
         <meta property="og:type" content="website"/>
         <meta property="og:locale" content="en_US"/>
-        <meta name="twitter:card" content="Summary"/>
-        <meta name="twitter:title" content="Livio 206"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content="Livio206"/>
         <meta name="twitter:description" content="Seattle Hip Hop"/>
-        <meta name="twitter:image" content="http://www.livio206.com/img/ogimg.jpg"/>
-        <meta name="twitter:image:alt" content="Livio 206 Logo"/>
+        <meta name="twitter:image" content=""/>
+        <meta name="twitter:image:alt" content=""/>
         <meta charset="UTF-8">
         <meta name = "keywords" content = "Seattle hip hop" /> 
         <meta name = "description" content = "Livio music." /> 
-        <meta name="author" content="Patrick Powell/Mike Huffman"/>    
+        <meta name="author" content="Patrick Powell"/>    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://js.stripe.com/v3/"></script>
         <script data-ad-client="ca-pub-1831492306342250" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
 
     <body>
     <main>
-  
-      <script>
-        window.onload = function() {
-        document.getElementById("featured_audio").play();
-}
-        var audio = document.getElementById("featured_audio");
-      </script>
+
       
       <header>
         <div class="Logo">
@@ -54,46 +49,22 @@
       </header>
       
          <div class="MixtapeContainer">
-            <h1 style="color:#FFF;text-shadow: 2px 2px 4px #000000">LIV FOREVER BUY NOW!</h1>
+            <h2 style="color:#FFF;text-shadow: 2px 2px 4px #000000">THANKS FOR YOUR SUPPORT!</h2>
+            <h2 style="color:#FFF;text-shadow: 2px 2px 4px #000000">YOUR DOWNLOAD IS READY BELOW!</h2>
             <div class="pic01">
                 <img style="padding:3%; max-width: 100%; margin: auto;" src="img/Liv Forever.png"></div>
-                <button
+                
+                <a href="/Downloads/Albums/Livio- Liv Forever.zip"><button
                 style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;text-shadow: 2px 2px 4px #000000"
                 id="checkout-button-price_1HLHUDLNv8aAdHoyBsNPypPd"
                 role="link"
                 type="button"
                 >
-                Checkout
-                </button>
+                DOWNLOAD ZIP
+                </button></a>
                 <div style="padding:3%">
-                <audio controls controlsList="nodownload" id="featured_audio" src="Livio Music/Albums/Livio- Liv Forever/03 All The Time.mp3" loop="loop" type="audio/mpeg"></audio>
                 </div>
-                <div id="error-message"></div>
                 
-                <script>
-                (function() {
-                var stripe = Stripe('pk_live_51EckxULNv8aAdHoyaxw4ynRKIjraWsUewCT68aQrLhl6kD1SRkVB4FEeIZkfuckrJhgh9c6s2pqjV5ryRbK9QW4p00nCRIFHUb');
-                
-                var checkoutButton = document.getElementById('checkout-button-price_1HLHUDLNv8aAdHoyBsNPypPd');
-                checkoutButton.addEventListener('click', function () {
-                 
-                  stripe.redirectToCheckout({
-                    lineItems: [{price: 'price_1HLHUDLNv8aAdHoyBsNPypPd', quantity: 1}],
-                    mode: 'payment',
-                   
-                    successUrl: 'http://livio206.com/purchasesuccess-lf.html',
-                    cancelUrl: 'http://livio206.com/index.html',
-                  })
-                  .then(function (result) {
-                    if (result.error) {
-                     
-                      var displayError = document.getElementById('error-message');
-                      displayError.textContent = result.error.message;
-                    }
-                  });
-                });
-                })();
-                </script>
       </div>
       </main>
       
