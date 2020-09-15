@@ -1,14 +1,24 @@
-
-main{
-    background: url(img/background.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
+.full-screen{
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
+.full-screen video{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
 .Logo{
 	max-width: 50%;
-	margin: auto;
+  margin: auto;
+  opacity: 1;
 }
 
 header{
@@ -24,15 +34,17 @@ header{
 
 .MixtapeContainer{  
     position: relative;
-    padding-bottom: 20%;
-    background-image: url(img/BWpic.jpg);
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: auto;
+    padding: 5%;
+    margin-left: 5vh;
+    margin-right: 5vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     z-index: 0;
+    margin-bottom: 25%;
+    background: rgba(255,255,255,0.25);
+    background-attachment: scroll;
+    
 }
 
 .mixpic{
@@ -47,7 +59,7 @@ navbar{
     background-color: antiquewhite;
     display: flex;
     justify-content: center;
-    
+    opacity: 100%;
 }
 
 h2,h1{
@@ -57,21 +69,33 @@ h2,h1{
 
 
 footer{
-    display: flex;
+    position: fixed;
     bottom: 0;
-    align-items: center;
-    justify-content: center;
-    padding: 3%;
+    width: 100%;
+    height: 125px;
+    margin-top: -125px;
     background-color: antiquewhite;
-    font-size: 20px; 
-  
+    font-size: 15px; 
+    font-variant: small-caps;
+    z-index: 1;
+    opacity: 80%;
 }
 
 .footerlogo{
-    flex-grow: 1;
+    display: inline-flex;
+    bottom: 0;
     max-width: 5%;
     margin-left: 12%;
-    padding-bottom: 5%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.footerlogo:hover{
+  filter: drop-shadow( 0 0.5rem grey);
+}
+
+.footertext:hover{
+  text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -87,13 +111,15 @@ footer{
 
 .btn:hover {
     background: #f4f4f4;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .iframe-container{
   position: relative;
-  width: 80%;
-  padding-bottom: 56.25%;
+  width: 100%;
+  padding-bottom: 50%;
   height: 0;
+  box-shadow: 5px 5px 15px 10px #000000;
 }
 .iframe-container iframe{
   position: absolute;
@@ -121,13 +147,10 @@ footer{
 
     .MixtapeContainer{
     position: relative;
-    padding-bottom: 20%;
-    background-image: url(img/BWpic.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: auto;
+    padding: 10%;
+    margin-bottom: 150px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: 1;
     z-index: 0;
     }
 
