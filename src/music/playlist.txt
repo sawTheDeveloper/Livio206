@@ -1,0 +1,83 @@
+[{
+		"title": "No More Mr. Nice Guy",
+		"folder": [{
+				"title": "Greaseball",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/1 GREASEBALL.m4a",
+                "poster": "img/ogimg.jpg"
+			},
+			{
+				"title": "GTA",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/2 GTA.m4a"
+			},
+			{
+				"title": "Clap Back",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/3. Clap Back.m4a"
+			},
+			{
+				"title": "Shoulder Lean",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/4. Shoulder Lean.m4a"
+			},
+			{
+				"title": "Piss Test",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/5. PISS TEST.m4a"
+			},
+			{
+				"title": "Don't Push Me",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/6. Don't Push Me.m4a"
+			},
+			{
+				"title": "Mic Check Ft. Byrdie",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/7. Mic Check Ft. Byrdie.m4a"
+			},
+			{
+				"title": "Sunshine",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/8. SUNSHINE.m4a"
+			},
+			{
+				"title": "So Seductive Ft. Byrdie",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/9. So Seductive Ft. Byrdie.m4a"
+			},
+			{
+				"title": "DJ Jam Freestyle",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/10. DJ Jam Freestyle.m4a"
+			},
+			{
+				"title": "Unexpected Survival",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/11. Unexpected Survival.m4a"
+			},
+			{
+				"title": "The Watcher",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/12. The Watcher.m4a"
+			},
+			{
+				"title": "Crazy In Love",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/13 Crazy In Love.m4a"
+			},
+			{
+				"title": "Destroy and Rebuild",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/16. Destroy and Rebuild.m4a"
+			},
+			{
+				"title": "Quiet Storm Ft. Byrdie",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/17. Quiet Storm Ft. Byrdie.m4a"
+			},
+			{
+				"title": "Clowns",
+				"file": "src/music/Mixtapes/Livio - No More Mr Nice Guy/18 CLOWNS.m4a"
+			}
+		]
+	},
+	{
+		"title": "Raising The Bar",
+		"folder": [{
+				"title": "intro",
+				"file": "src/music/Mixtapes/Livio - Raising The Bar/01 - Intro.mp3",
+                "poster": "img/RaisingTheBarcover.Jpg"
+			},
+			{
+				"title": "Serie 2/2",
+				"file": "URL"
+			}
+		]
+	}
+]
