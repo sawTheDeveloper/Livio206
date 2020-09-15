@@ -26,53 +26,707 @@
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-      <script data-ad-client="ca-pub-1831492306342250" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
+      
+      
     </head>
     <body>
     <main>    
-        <header>
+        
+      <header>
             <div class="Logo">
                 <img src="img/livio3.svg">
                 </div>
-                <navbar>
+            <navbar>
             <a href="index.html" class="btn" id="view-work"> Home</a>
             <a href="Videos.html" class="btn" id="view-work"> Videos</a>
             <a href="Albums.html" class="btn" id="view-work"> Albums</a>
             <a href="Mixtapes.html" class="btn" id="view-work"> Mixtapes</a>
             </navbar>
-              </header>
+        </header>
         
-            
-            <div class="MixtapeContainer">
-                  <h2 style="color:#FFF;padding:2%;text-shadow: 2px 2px 4px #000000;">All Livio Mixtapes will be available here soon!</h2>
 
-                  <div class="mixpic">
-                  <img src="img/LetsTalkMoneycover.jpg"></div>               
-                  
-                  <div class="mixpic">
-                  <img src="img/UGKpic.jpg"></div>                    
+        
+        
+    <div class="MixtapeContainer">
+       
+        <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
+        <div style="padding: 3%"></div>
+
+        <img class="mixpic" src="img/Nmmng_cover.jpg" style="box-shadow: 3px 3px 15px 10px #000000"></img>
+        
+        <div id="app" style="padding-top: 2%;"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/cplayer/dist/cplayer.min.js"></script>
+        
+        <script>
+        let player = new cplayer({
+        autoplay: false,
+        element: document.getElementById('app'),
+          playlist: [
+          {
+            src: '/src/music/Mixtapes/Livio - No More Mr Nice Guy/1 GREASEBALL.m4a',
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Greaseball',
+            artist: 'Livio'
+          },
+          {
+            src: 'src/music/Mixtapes/Livio - No More Mr Nice Guy/2 GTA.m4a',
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'GTA',
+            artist: 'Livio'
+          },
+          {
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/3. Clap Back.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Clap Back',
+            artist: 'Livio'
+			    },
+			    {
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/4. Shoulder Lean.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Shoulder Lean',
+            artist: 'Livio'
+			    },
+			    {
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/5. PISS TEST.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Piss Test',
+            artist: 'Livio',
+			    },
+			    {
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/6. Don't Push Me.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: "Don't Push Me",
+            artist: 'Livio',
+			    },
+			    { 
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/7. Mic Check Ft. Byrdie.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Mic Check Ft. Byrdie',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/8. SUNSHINE.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Sunshine',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/9. So Seductive Ft. Byrdie.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'So Seductive Ft. Byrdie',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/10. DJ Jam Freestyle.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'DJ Jam Freestyle',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/11. Unexpected Survival.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Unexpected Survival',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/12. The Watcher.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'The Watcher',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/13 Crazy In Love.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Crazy In Love',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/16. Destroy and Rebuild.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Destroy and Rebuild',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/17. Quiet Storm Ft. Byrdie.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Quiet Storm Ft. Byrdie',
+            artist: 'Livio',
+			    },
+			    {
+
+            src: "src/music/Mixtapes/Livio - No More Mr Nice Guy/18 CLOWNS.m4a",
+            poster: '/img/Nmmng_cover.jpg',
+            name: 'Clowns',
+            artist: 'Livio',
+			    }
+        ]});
+      </script>
       
-                  <div class="mixpic">
-                  <img src="img/LivNProofcover.jpg"></div>
-                  
-                  <div class="mixpic">
-                  <img src="img/RaisingTheBarcover.jpg"></div>
-                   
-                 
+      <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
+      <div style="padding: 3%"></div>
+
+      <img class="mixpic" src="/img/RaisingTheBarcover.jpg" style="box-shadow: 3px 3px 15px 10px #000000"></img>
+      
+      <div id="app1" style="padding-top: 2%;"></div>
+      
+      <script>
+        let player1 = new cplayer({
+        element: document.getElementById('app1'),
+            playlist: [
+            {
+              src: '/src/music/Mixtapes/Livio - Raising The Bar/01 - Intro.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: 'Intro',
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/02 - Im Back.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "I'm Back",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/03 - Shine On.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Shine On",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/04 - Aint I.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Aint I",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/05 - U Cant Get With This.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "U Cant Get With This",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/06 - Hood Nigga.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Hood Nigga",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/07 - Bitch Im Paid.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Bitch Im Paid",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/08 - The Big Payback Feat Mass.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "The Big Payback Ft. Mass",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/09 - 100 Grand.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "100 Grand",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/10 - Juicy.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Juicy",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/11 - Just Like That.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Just Like That",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/12 - U Aint Got Nuthin Feat Stix.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "U Aint Got Nuthin Ft. Stix",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/13 - Dealin Weight.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Dealin Weight",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/14 - Temper.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Temper",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/15 - Im A Star.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "I'm A Star",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/16 - Get Up.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Get Up",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/17 - Bury Me Like A Man.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Bury Me Like A Man",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/18 - Drugs.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "Drugs",
+              artist: 'Livio',
+            },
+            {
+              src: 'src/music/Mixtapes/Livio - Raising The Bar/19 - My President.mp3',
+              poster: '/img/RaisingTheBarcover.jpg',
+              name: "My President",
+              artist: 'Livio',
+            },
+            ]});
+        </script>
+      </div>
+      
+      <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
+        <div style="padding: 3%"></div>
+  
+        <img class="mixpic" src="/img/UGKpic.jpg" style="box-shadow: 3px 3px 15px 10px #000000"></img>
+        
+        <div id="app2" style="padding-top: 2%;"></div>
+  
+        <script>
+          let player2 = new cplayer({
+          element: document.getElementById('app2'),
+              playlist: [
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/1.Intro.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Intro',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/2. My Party.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'My Party',
+                artist: 'Livio',
+              },
+              {
+                src: "src/music/Mixtapes/Livio - Underground King/3. Cadillac Pimpin'.mp3",
+                poster: '/img/UGKpic.jpg',
+                name: "Cadillac Pimpin'",
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/4. Aaliyah.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Aaliyah',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/5. Full Mode.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Full Mode',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/6. When The Last Time.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'When The Last Time',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/7. The Watcher.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'The Watcher',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/8. I Get High.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'I Get High',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/9. The Way We Ball.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'The Way We Ball',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/10. Work It.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Work It',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/11. Take It Off.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Take It Off',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/12. Dead Wrong.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Dead Wrong',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/13. Grimes.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Grimes',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/14. Multiply.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Multiply',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/15. Early in the Game.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'Early in the Game',
+                artist: 'Livio',
+              },
+              {
+                src: 'src/music/Mixtapes/Livio - Underground King/16. In the Club.mp3',
+                poster: '/img/UGKpic.jpg',
+                name: 'In the Club',
+                artist: 'Livio',
+              }
+              ]});
+          </script>
+        </div>
+
+        <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
+          <div style="padding: 3%"></div>
+    
+          <img class="mixpic" src="/img/LivNProofcover.jpg" style="box-shadow: 3px 3px 15px 10px #000000"></img>
+          
+          <div id="app3" style="padding-top: 2%;"></div>
+    
+          <script>
+            let player3 = new cplayer({
+            element: document.getElementById('app3'),
+                playlist: [
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/01 - Next Friday Intro.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Next Friday Intro',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/02 - Yours Truly.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Yours Truly',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/03 - 40oz - Bizarre Livio Kuniva and Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: '40oz',
+                  artist: 'Bizarre, Livio, Kuniva & Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/04 - Wreck - Livio & Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Wreck',
+                  artist: 'Livio & Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/05 - Get Down - Livio.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Get Down',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/06 - Gurls Wit Tha Boom - Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Gurls Wit Tha Boom',
+                  artist: 'Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/07 - Its My Life - Livio & Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Its My Life',
+                  artist: 'Livio & Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/09 - Hit Em Up - Livio.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Hit Em Up',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/10 - Whats Up - Livio & Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Whats Up',
+                  artist: 'Livio & Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/11 - Next Friday Skit 1.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Next Friday Skit 1',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/12 - U R The One - Livio Bizarre & Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'U R The One',
+                  artist: 'Livio, Bizarre & Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/13 - Pulp Fiction Skit.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Pulp Fiction Skit',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/14 - Forgive Me - Proof & 50 Cent.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Forgive Me',
+                  artist: 'Proof & 50 Cent',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/15 - The Way I Am - Livio.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'The Way I Am',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/16 - Back 2 Reality - Livio & Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Back 2 Reality',
+                  artist: 'Livio & Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/17 - Thats Young Livio - Livio.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Thats Young Livio',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/18 - Neil Armstrong - Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Neil Armstrong',
+                  artist: 'Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/19 - Stunt 101 - Livio & Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Stunt 101',
+                  artist: 'Livio & Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/20 - Yzark - Proof.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Yzark',
+                  artist: 'Proof',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/21 - Next Firday Skit 2.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Next Friday Skit 2',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/22 - Udontwantnun - Livio Proof & Bizarre.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Udontwantnun',
+                  artist: 'Livio, Proof & Bizarre',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/23 - Scarface Skit.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Scarface Skit',
+                  artist: 'Livio',
+                },
+                {
+                  src: 'src/music/Mixtapes/Livio and Proof -Liv N Proof/24 - Word - Livio.mp3',
+                  poster: '/img/LivNProofcover.jpg',
+                  name: 'Word',
+                  artist: 'Livio',
+                }
+                ]});
+            </script>
+          </div>
+
+          <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
+            <div style="padding: 3%"></div>
+      
+            <img class="mixpic" src="/img/LetsTalkMoneycover.jpg" style="box-shadow: 3px 3px 15px 10px #000000"></img>
+            
+            <div id="app4" style="padding-top: 2%;"></div>
+      
+            <script>
+              let player4 = new cplayer({
+              element: document.getElementById('app4'),
+                  playlist: [
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/01) Intro.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Intro',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/02) Defination Of A Hustler.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Definition Of A Hustler',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/03) Stylin.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Stylin',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/04) Lets Talk Money.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Lets Talk Money',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/05) Skit.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Skit',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/06) Paid In Full.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Paid In Full',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/07) S 550.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'S 550',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/08) What You Call A Nigga.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'What You Call A Nigga',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/09) Whos That.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Whos That',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/10) Money On My Block.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Money On My Block',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/11) Got You Good.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Got You Good',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/12) No.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'No',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/13) In This Streetz.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'In This Streetz',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/14) The Suffering.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'The Suffering',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/15) Get That Doe.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Get That Doe',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/16) Money On My Mind.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Money On My Mind',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/17) Dont Push Me.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Dont Push Me',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/18) Get Me Got Me Good.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Get Me Got Me Good',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/19) We Will Rock You.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'We Will Rock You',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/20) The Rhyme Language.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'The Rhyme Language',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/21) Heaven.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'Heaven',
+                    artist: 'Livio',
+                  },
+                  {
+                    src: 'src/music/Mixtapes/Livio-Lets Talk Money/22) The Money Man.mp3',
+                    poster: '/img/LetsTalkMoneycover.jpg',
+                    name: 'The Money Man',
+                    artist: 'Livio',
+                  }
+                  ]});
+               
+              </script>
+            </div>
+        
+          </div>
+   
+    </main>
+  <footer>
+    <a href="https://twitter.com/livio206" target="_blank"><img class = "footerlogo" src="img/twittersml.png"></a>
+    <a href="https://facebook.com/YoungLivio" target="_blank"><img class ="footerlogo" src="img/facebooksml.png"></a>
+    <a href="https://instagram.com/livio206" target="_blank"><img class = "footerlogo" src="img/instagramsml.png"></a>
+    <a href="https://www.youtube.com/user/Livio206" target="_blank"><img class = "footerlogo" src="img/youtubesml.png"></a>
+    <a href="https://partner.pcloud.com/r/34380" title="pCloud Premium" target="_blank"><img class= "footerlogo" src="img/pcloudsml.png" alt="pCloud Premium"/></a>
+    <p class="text-center"><strong>@Livio206 All Rights Reserved 2020</strong></p>
+  </footer>
 
 
-
-                  </main>
-                  <footer>
-                    <a href="https://twitter.com/livio206" target="_blank"><img class = "footerlogo" src="img/twittersml.png"></a>
-                    <a href="https://facebook.com/YoungLivio" target="_blank"><img class ="footerlogo" src="img/facebooksml.png"></a>
-                    <a href="https://instagram.com/livio206" target="_blank"><img class = "footerlogo" src="img/instagramsml.png"></a>
-                    <a href="https://www.youtube.com/user/Livio206" target="_blank"><img class = "footerlogo" src="img/youtubesml.png"></a>
-                    <a href="https://partner.pcloud.com/r/34380" title="pCloud Premium" target="_blank"><img class= "footerlogo" src="img/pcloudsml.png" alt="pCloud Premium"/></a>
-                    <p class="text-center"><strong>@Livio206 All Rights Reserved 2020</strong></p>
-                 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </body>
 </html>
