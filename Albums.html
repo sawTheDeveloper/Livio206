@@ -57,7 +57,49 @@
                 </video>
             <div class="MixtapeContainer">
                 <h1 style="color:#FFF;padding:2%;text-shadow: 2px 2px 4px #000000">Albums</h1>
+
                 <!--Albums -->
+
+                <div class="w3-container" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
+                    <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/StoryCover.png">
+                    <div style="padding: 1%;"></div>
+                    <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;" id="checkout-button-price_1KZIj5LNv8aAdHoymggAxQ4D" role="link" type="button">
+                  Checkout
+                </button>
+                    <div style="padding: 5%;"></div>
+                    <div id="error-message"></div>
+
+                    <script>
+                        (function() {
+                            var stripe = Stripe('pk_live_51EckxULNv8aAdHoyaxw4ynRKIjraWsUewCT68aQrLhl6kD1SRkVB4FEeIZkfuckrJhgh9c6s2pqjV5ryRbK9QW4p00nCRIFHUb');
+
+                            var checkoutButton = document.getElementById('checkout-button-price_1KZIj5LNv8aAdHoymggAxQ4D');
+                            checkoutButton.addEventListener('click', function() {
+
+                                stripe.redirectToCheckout({
+                                        lineItems: [{
+                                            price: 'price_1KZIj5LNv8aAdHoymggAxQ4D',
+                                            quantity: 1
+                                        }],
+                                        mode: 'payment',
+
+                                        successUrl: 'http://livio206.com/purchasesuccess-Soml.html',
+                                        cancelUrl: 'http://livio206.com/index.html',
+                                    })
+                                    .then(function(result) {
+                                        if (result.error) {
+
+                                            var displayError = document.getElementById('error-message');
+                                            displayError.textContent = result.error.message;
+                                        }
+                                    });
+                            });
+                        })();
+                    </script>
+                </div>
+
+                    <!--Next Album item-->
+
                 <div class="w3-container" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/R2Liv.png">
                     <div style="padding: 1%;"></div>
@@ -96,6 +138,8 @@
                     </script>
                 </div>
 
+                    <!--Next Album item-->
+
                 <div class="w3-container" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/Liv Forever.png">
                     <div style="padding: 1%;"></div>
@@ -133,6 +177,9 @@
                         })();
                     </script>
                 </div>
+
+                     <!--Next Album item-->
+
                 <div class="w3-container" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/SocialCurrencycover.jpg">
                     <div style="padding: 1%;"></div>
@@ -170,6 +217,8 @@
                         })();
                     </script>
                 </div>
+
+                         <!--Next Album item-->
 
                 <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/PaperMachecover.jpg">
@@ -210,6 +259,9 @@
 
 
                 </div>
+
+                     <!--Next Album item-->
+
                 <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/SSDDcover.jpg">
                     <div style="padding: 1%;"></div>
@@ -247,7 +299,7 @@
                         })();
                     </script>
 
-
+                    <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/SNLcover.jpg">
                     <div style="padding: 1%;"></div>
                     <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em" id="checkout-button-price_1H8YnjLNv8aAdHoyFqEUm6bY" role="link" type="button">
@@ -283,8 +335,9 @@
                             });
                         })();
                     </script>
+                    </div>
 
-
+                    <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/CanILivcover.jpg">
                     <div style="padding: 1%;"></div>
                     <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em" id="checkout-button-price_1H8YofLNv8aAdHoyvr1IRtmR" role="link" type="button">
@@ -320,9 +373,10 @@
                             });
                         })();
                     </script>
+                    </div>
 
 
-
+                    <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/CruelIntentionsCover.jpg">
                     <div style="padding: 1%;"></div>
                     <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em" id="checkout-button-price_1H8YknLNv8aAdHoy9NKQ60Rp" role="link" type="button">
@@ -358,8 +412,9 @@
                             });
                         })();
                     </script>
+                    </div>
 
-
+                    <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/MyLifecover.jpg">
                     <div style="padding: 1%;"></div>
                     <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em" id="checkout-button-price_1H8YlmLNv8aAdHoyjQjB5xBg" role="link" type="button">
@@ -395,6 +450,7 @@
                             });
                         })();
                     </script>
+                    </div>
                 </div>
             </div>
             <footer oncontextmenu="return false;">
