@@ -1,0 +1,351 @@
+  /* Styles for the popup container */
+  #popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Set z-index to appear over everything else */
+  }
+  
+  /* Styles for the popup content */
+  #popup-content {
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+    position: absolute;
+  }
+
+  #popup-content img {
+    max-width: 80%; /* Set max width for the image */
+  max-height: 80%; /* Set max height for the image */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+
+.full-screen{
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-screen video{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.Logo{
+	max-width: 50%;
+  margin: auto;
+  opacity: 1;
+}
+
+header{
+    overflow: hidden;
+    background-image: url(img/headerbg.jpg);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  
+    
+}
+
+.MixtapeContainer{  
+    position: relative;
+    padding: 5%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    margin-bottom: 25%;
+    background: rgba(255,255,255,0.25);
+    background-attachment: scroll;
+    
+}
+
+.mixpic{
+  padding: 2%;
+  max-width: 100%;
+}
+.mixpic:hover{
+  filter: saturate(200%);
+}
+
+navbar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    opacity: 100%;
+}
+
+h2,h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 125px;
+    margin-top: -125px;
+    background-color: antiquewhite;
+    font-size: 15px; 
+    font-variant: small-caps;
+    z-index: 1;
+    opacity: 80%;
+}
+
+.footerlogo{
+    display: inline-flex;
+    bottom: 0;
+    max-width: 5%;
+    margin-left: 12%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.footerlogo:hover{
+  filter: drop-shadow( 0 0.5rem grey);
+}
+
+.footertext:hover{
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.btn{
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  height: 0;
+  box-shadow: 5px 5px 15px 10px #000000;
+}
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Screen Sizes 500px and Up */
+@media only screen and (min-width: 64.063em) { 
+
+    header{
+        position: sticky;
+        z-index:1;
+    }
+
+    .Logo{
+        max-width: 30%;
+    }
+
+    .footerlogo{
+      margin-left: 15%;
+    }
+
+    .MixtapeContainer{
+    position: relative;
+    padding: 10%;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: 1;
+    z-index: 0;
+    }
+
+
+
+
+}
+
+/*
+ * Bootrap carousel plugin
+ * --------------------------------------------------
+ */
+  
+  .youtube-carousel{
+    border: 4px solid #000000;
+  }
+  
+  .video-container { 
+     position: relative; /* keeps the aspect ratio */ 
+     padding-bottom: 56.25%; /* fine tunes the video positioning */ 
+     padding-top: 60px; overflow: hidden;
+     margin-bottom: -1px;
+     margin-right: -1px;   
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;  
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+  }
+    
+  .carousel-control .glyphicon-chevron-left{
+    top:35%;
+    font-size: 20px;
+    left:5%;
+    margin: 0;
+  }
+  
+  .carousel-control .glyphicon-chevron-right{
+    top:35%;
+    font-size: 20px;
+    left:33%;
+    margin: 0;
+  }
+  
+  .carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: #ffffff;
+    top: 50%;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    opacity: 1;
+    height:120px;
+  }
+  
+  .controls{
+     display: none;
+  }
+  
+  .carousel-control:hover {
+    text-decoration: none;
+    filter: alpha(opacity=60);
+    outline: 0;
+    opacity: 0.6;
+  }
+  
+  .left-button {
+    height:70px;
+    width:35px;
+    border-radius: 0 90px 90px 0;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    -moz-border-radius: 0 90px 90px 0;
+    -webkit-border-radius: 0 90px 90px 0;
+    background-color: #000000;
+    display: inline-block;
+    position: relative;
+    float:left;
+    /*subpixel bug*/
+    margin-left: -1px; 
+  }
+  
+  .right-button {
+    height:70px;
+    width:35px;
+    border-radius: 90px 0 0 90px;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    -moz-border-radius: 90px 0 0 90px;
+    -webkit-border-radius: 90px 0 0 90px;
+    background-color: #000000;
+    display: inline-block;
+    position: relative;
+    float:right;
+    /*subpixel bug*/
+    margin-right: -1px;
+  }
+  
+  
+  .carousel-caption {
+   display: none;
+   background: none repeat scroll 0 0 #000000;
+    bottom: 0;
+    font-size: 12px;
+    text-align: center;
+    opacity: 1;
+    padding:7px 30px 7px;
+    text-transform: uppercase;
+    z-index:11;
+    pointer-events:none;
+  }
+  
+  @media screen and (min-width: 768px) {
+  .right-button {
+    height:120px;
+    width:60px;
+    border-radius: 90px 0 0 90px;
+    -moz-border-radius: 90px 0 0 90px;
+    -webkit-border-radius: 90px 0 0 90px;
+    display: inline-block;
+    position: relative;
+    float:right;
+  }
+  
+  .left-button {
+    height:120px;
+    width:60px;
+    border-radius: 0 90px 90px 0;
+    -moz-border-radius: 0 90px 90px 0;
+    -webkit-border-radius: 0 90px 90px 0;
+    display: inline-block;
+    position: relative;
+    float:left;
+  }
+  
+  .carousel-control .glyphicon-chevron-left{
+    top:35%;
+    font-size: 35px;
+    left:5%;
+  }
+  
+  .carousel-control .glyphicon-chevron-right{
+    top:35%;
+    font-size: 35px;
+    left:35%;
+  }
+  
+  .carousel-caption {
+    font-size: 18px;
+    padding:15px 20px 15px;
+    }
+  }
+  @media screen and (min-width: 992px) {
+   .carousel-caption {
+      font-size: 18px;
+      padding:15px 20px 15px;
+    }
+  }
+
