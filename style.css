@@ -184,7 +184,22 @@ footer{
     z-index: 0;
     }
 
+   
+     
+    }
 
+    #popup-container {
+      justify-content: center;
+      align-content: center;
+      width: 90%; /* Make the container 90% of the screen width */
+      height: auto; /* Allow the height to adjust based on the content */
+    }
+    
+    #popup-container img {
+      margin-left: 15%;
+      max-width: 100%; /* Make the image fill the container width */
+      height: auto; /* Allow the height to adjust based on the image aspect ratio */
+    }
 
 
 }
