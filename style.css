@@ -1,6 +1,6 @@
   /* Styles for the popup container */
   #popup-container {
-    position: fixed;
+    position: flex;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Set z-index to appear over everything else */
+   
   }
   
   /* Styles for the popup content */
