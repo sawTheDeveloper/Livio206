@@ -419,7 +419,7 @@
                     <div class="w3-container" id="mixtapeplayer" style="display: flex; flex-direction: column; align-items: center; max-width: 100%;">
                     <img class="mixpic" style="box-shadow: 3px 3px 15px 10px #000000" src="img/CruelIntentionsCover.jpg">
                     <div style="padding: 1%;"></div>
-                    <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em" id="checkout-button-price_1H8ZNOLNv8aAdHoyyhPQpVBR" role="link" type="button">
+                    <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em" id="checkout-button-price_1H8YknLNv8aAdHoy9NKQ60Rp" role="link" type="button">
   Checkout
 </button>
                     <div style="padding: 5%;"></div>
@@ -429,12 +429,12 @@
                         (function() {
                             var stripe = Stripe('pk_live_51EckxULNv8aAdHoyaxw4ynRKIjraWsUewCT68aQrLhl6kD1SRkVB4FEeIZkfuckrJhgh9c6s2pqjV5ryRbK9QW4p00nCRIFHUb');
 
-                            var checkoutButton = document.getElementById('checkout-button-price_1H8ZNOLNv8aAdHoyyhPQpVBR');
+                            var checkoutButton = document.getElementById('checkout-button-price_1H8YknLNv8aAdHoy9NKQ60Rp');
                             checkoutButton.addEventListener('click', function() {
 
                                 stripe.redirectToCheckout({
                                         lineItems: [{
-                                            price: 'price_1H8ZNOLNv8aAdHoyyhPQpVBR',
+                                            price: 'price_1H8YknLNv8aAdHoy9NKQ60Rp',
                                             quantity: 1
                                         }],
                                         mode: 'payment',
