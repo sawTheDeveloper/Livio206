@@ -77,14 +77,14 @@
           </video>
             <div class="MixtapeContainer">
                 <div class="iframe-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y945czfvm-M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bouPF1Zmscg?si=M6MpQ7RAOxeNrU7P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div style="padding: 3%;"></div>
-                <h1 style="color:#FFF;text-shadow: 2px 2px 4px #000000; padding: 4%;">Friend Of The Family BUY NOW!</h1>
+                <h1 style="color:#FFF;text-shadow: 2px 2px 4px #000000; padding: 4%;">Liv Free Or Die BUY NOW!</h1>
 
-                <img class="mixpic" src="img/fofCover.jpg" onmouseover="this.src='img/fofBack.jpg';" onmouseout="this.src='img/fofCover.jpg';">
+                <img class="mixpic" src="img/LivFreeCover.jpg" onmouseover="this.src='img/LivFreeBack.jpg';" onmouseout="this.src='img/LivFreeCover.jpg';">
                 <div style="padding: 3%;"></div>
-                <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:2em;text-shadow: 2px 2px 4px #000000" id="checkout-button-price_1MFQMOLNv8aAdHoyhKS9DULf" role="link" type="button">
+                <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:2em;text-shadow: 2px 2px 4px #000000" id="checkout-button-price_1OiEbvLNv8aAdHoy0mwguRSp" role="link" type="button">
                 Checkout
                 </button>
 
@@ -94,12 +94,12 @@
                     (function() {
                         var stripe = Stripe('pk_live_51EckxULNv8aAdHoyaxw4ynRKIjraWsUewCT68aQrLhl6kD1SRkVB4FEeIZkfuckrJhgh9c6s2pqjV5ryRbK9QW4p00nCRIFHUb');
 
-                        var checkoutButton = document.getElementById('checkout-button-price_1MFQMOLNv8aAdHoyhKS9DULf');
+                        var checkoutButton = document.getElementById('checkout-button-price_1OiEbvLNv8aAdHoy0mwguRSp');
                         checkoutButton.addEventListener('click', function() {
 
                             stripe.redirectToCheckout({
                                     lineItems: [{
-                                        price: 'price_1MFQMOLNv8aAdHoyhKS9DULf',
+                                        price: 'price_1OiEbvLNv8aAdHoy0mwguRSp',
                                         quantity: 1
                                     }],
                                     mode: 'payment',
